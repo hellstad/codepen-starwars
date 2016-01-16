@@ -18,7 +18,7 @@ var twitter = new Twit({
 });
 
 // Lambda Handler
-module.exports.handler = function(event, context) {
+module.exports.handler = function (event, context) {
 	twitter.get('search/tweets', { q: '#starwars', count: 50 }, function (err, data, res) {
 		if (err) {
 			return context.done(err, null);
