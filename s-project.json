@@ -1,0 +1,25 @@
+{
+  "name": "codepen-starwars",
+  "version": "0.0.1",
+  "profile": "serverless-0",
+  "location": "https://github.com/...",
+  "author": "",
+  "description": "",
+  "domain": "starwars.ss.ht",
+  "stages": {
+    "development": [
+      {
+        "region": "ap-northeast-1",
+        "iamRoleArnLambda": "arn:aws:iam::051181212668:role/codepen-starwars-development-r-IamRoleLambda-KG6VVYNL504R",
+        "regionBucket": "serverless.apnortheast1.starwars.ss.ht",
+        "restApiId": "8bfg99m9ac"
+      }
+    ]
+  },
+  "custom": {},
+  "plugins": [
+    {
+      "path": "serverless-cors-plugin"
+    }
+  ]
+}
