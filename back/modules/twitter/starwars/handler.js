@@ -24,7 +24,7 @@ module.exports.handler = function (event, context) {
 			return context.done(err, null);
 		}
 		if (!err && res) {
-		    return context.done(null, data);
+			return context.done(null, data);
 		}
 	});
 };
